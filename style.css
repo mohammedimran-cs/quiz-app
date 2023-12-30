@@ -1,0 +1,96 @@
+* {
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(20,55,120,1) 100%);
+}
+
+#quiz-app {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid grey;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: block;
+    width: 100%;
+    text-align: start;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#nxt-btn {
+    padding: 10px 50px;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#nxt-btn:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.right-btn {
+    background-color: rgb(64, 143, 64); /* or any style you want for correct answers */
+    color: black;
+}
+
+.wrong-btn {
+    background-color: rgb(221, 48, 48); /* or any style you want for incorrect answers */
+    color: black;
+}
+
+.btn-disabled {
+    cursor: default;
+}
+
+.try-again {
+    padding: 10px 40px;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.try-again:hover {
+    background-color: rgb(53, 52, 52);
+}
